@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+/* Smooth theme switching */
+/* *:not(i):not(svg) {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease, 
+    border-color 0.25s ease,
+    fill 0.25s ease,
+    stroke 0.25s ease;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  /* Background */
+  --color-lightPrimaryBg: #faf7f5;
+  --color-lightSecondaryBg: #dc493f;
+
+  /* Card */
+  --color-lightCardBg: #fafafa;
+
+  /* Brand / Actions */
+  --color-lightBrand: #dc493f;
+  --color-lightBrandHover: #c63f36;
+  /* Text */
+  --color-lightHeadingText: #2e2e2e;
+  --color-lightBodyText: #69635f;
+
+  /* Decorative */
+  --color-lightDecorative: #e5807a;
+
+  /* Borders */
+  --color-lightBorder: #949392;
+}
+
+.container-2 {
+  background: url(./assets/image/bhaduriaImage.JPG);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgb(220 73 63);
+  /* order: 1; */
+  /* justify-self: center; */
+  /* width: 300px;
+  height: 300px; */
+  animation: profile_animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile_animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/ 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+  }
+}
+
+.animate-scroll {
+  animation: scroll 1.5s infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ========== DARK MODE THEME ========== */
+.dark {
+  /* Background */
+  --color-lightPrimaryBg: #121212;
+  --color-lightSecondaryBg: #1e1e1e;
+
+  /* Card */
+  --color-lightCardBg: #1a1a1a;
+
+  /* Brand */
+  --color-lightBrand: #ff6b61;
+  --color-lightBrandHover: #e85a52;
+
+  /* Text */
+  --color-lightHeadingText: #f1f1f1;
+  --color-lightBodyText: #b5b5b5;
+
+  /* Decorative */
+  --color-lightDecorative: #ff8a82;
+
+  /* Borders */
+  --color-lightBorder: #2c2c2c;
+}
+
+/* ===== Premium Minimal Scrollbar ===== */
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(220, 73, 63, 0.35); /* Brand color but soft */
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(220, 73, 63, 0.7);
+}
+
+/* Dark Mode */
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 107, 97, 0.4);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 107, 97, 0.8);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(220, 73, 63, 0.4) transparent;
+}
+
+.dark * {
+  scrollbar-color: rgba(255, 107, 97, 0.5) transparent;
+}
