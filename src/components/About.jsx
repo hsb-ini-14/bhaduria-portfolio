@@ -19,7 +19,11 @@ const About = () => {
           {/* Left Side */}
           <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-12">
             <div className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-2xl bg-lightBrand/10 flex items-center justify-center shadow-md">
-              <img src={selfImage} alt="dummyImage" className="w-full h-full rounded-2xl object-cover" />
+              <img
+                src={selfImage}
+                alt="dummyImage"
+                className="w-full h-full rounded-2xl object-cover"
+              />
             </div>
           </div>
           {/* Right Side */}
@@ -50,12 +54,15 @@ const About = () => {
             </p>
             <div className="mt-4">
               <a
-                href="#"
-                // download
+                href="/Harsh_S_Bhaduria_Frontend_Resume.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-lightBrand text-white font-semibold rounded-xl hover:bg-lightBrandHover transition-all duration-300"
               >
                 <i className="bx bx-download"></i>
                 Download Resume
+                <span className="text-xs text-white/80 ml-1">(PDF, 150KB)</span>
               </a>
             </div>
           </div>
