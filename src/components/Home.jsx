@@ -1,4 +1,5 @@
 import { useState } from "react";
+import selfImage from "../assets/image/bhaduriaImage.jpg";
 
 const Home = () => {
   const [bounce, setBounce] = useState(false);
@@ -67,7 +68,14 @@ const Home = () => {
           </div>
         </div>
         {/* Image Container */}
-        <div className="container-2 w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 lg:w-60 lg:h-60 xl:w-80 xl:h-80 shrink-0"></div>
+        {/* <div className="container-2 w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 lg:w-60 lg:h-60 xl:w-80 xl:h-80 shrink-0"></div> */}
+        <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 lg:w-60 lg:h-60 xl:w-80 xl:h-80 shrink-0 relative">
+          <img
+            src={selfImage}
+            alt="Harsh Singh Bhaduria"
+            className="w-full h-full object-cover animate-blob border-[8px] border-lightBrand"
+          />
+        </div>
       </div>
       {/* Scroll Indicator */}
       <a

@@ -109,20 +109,14 @@ export const skillsData = [
 export const educationData = [
   {
     id: 1,
-    degree: "Bachelor of Computer Applications",
-    institute: "ABC University, India",
-    duration: "2021 – 2024",
+    degree: "Executive Post Graduate Diploma in Software Development",
+    institute: "IIIT Bangalore & upGrad",
+    duration: "June 2023 – August 2024",
   },
   {
     id: 2,
-    degree: "Higher Secondary (12th)",
-    institute: "XYZ Public School",
-    duration: "2019 – 2021",
-  },
-  {
-    id: 3,
-    degree: "Secondary School (10th)",
-    institute: "XYZ Public School",
-    duration: "2017 – 2019",
+    degree: "B. Tech in Mechatronics Engineering",
+    institute: "SRM Institute of Science and Technology",
+    duration: "July 2015 – May 2019",
   },
 ];

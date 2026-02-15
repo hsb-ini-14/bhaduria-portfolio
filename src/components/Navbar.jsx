@@ -51,7 +51,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full h-16 flex justify-between items-center xl:px-36 lg:px-24 md:px-12 sm:px-6 px-4 fixed top-0 z-50 backdrop-blur-md shadow-sm transition-colors duration-300">
+      <nav className="w-full h-16 flex justify-between items-center xl:px-36 lg:px-24 md:px-12 sm:px-6 px-4 fixed top-0 z-40 backdrop-blur-md shadow-sm transition-colors duration-300">
         {/* Logo */}
         <div className="flex items-center justify-between gap-4">
           <a

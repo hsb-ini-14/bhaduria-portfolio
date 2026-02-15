@@ -1,12 +1,23 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Loader from "./components/Loader";
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
 
@@ -24,12 +35,17 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-lightPrimaryBg transition-colors duration-300">
-      <Navbar />
-      <Home />
-      <Projects />
-      <Skills />
-      <About />
-      <Contact />
+      <Loader isLoading={isLoading} />
+      {!isLoading && (
+        <>
+          <Navbar />
+          <Home />
+          <Projects />
+          <Skills />
+          <About />
+          <Contact />
+        </>
+      )}
     </div>
   );
 };
