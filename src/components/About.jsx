@@ -54,7 +54,7 @@ const About = () => {
             </p>
             <div className="mt-4">
               <a
-                href="/Harsh_S_Bhaduria_Frontend_Resume.pdf"
+                href={`${import.meta.env.BASE_URL}Harsh_S_Bhaduria_Frontend_Resume.pdf`}
                 download
                 target="_blank"
                 rel="noopener noreferrer"
