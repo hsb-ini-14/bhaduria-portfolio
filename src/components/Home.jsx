@@ -50,9 +50,8 @@ const Home = () => {
 
           {/* Description */}
           <p className="max-w-md text-lightBodyText font-semibold">
-            I'm a frontend developer passionate about building modern,
-            responsive, and user-friendly web applications using React and
-            Tailwind CSS.
+            I enjoy turning ideas into fast, responsive web apps with React and
+            Tailwind, keeping things simple, clean, and user-friendly.
           </p>
           {/* Button */}
           <div className="mt-6">

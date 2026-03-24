@@ -32,29 +32,34 @@ const About = () => {
               FrontEnd Developer
             </h3>
             <p className="text-lightBodyText leading-relaxed">
-              I’m a frontend developer focused on building modern, responsive,
-              and user-friendly web applications using React and Tailwind CSS.
+              Hey, I’m Harsh — a frontend developer who enjoys turning ideas
+              into clean, responsive, and user-friendly web apps. I mostly work
+              with React and Tailwind, and I like keeping things simple, fast,
+              and visually neat.
             </p>
 
             <p className="text-lightBodyText leading-relaxed">
-              I have hands-on experience creating real-world projects like a
-              to-do app, expense tracker, and portfolio website, with a strong
-              focus on clean UI and reusable components.
+              I’ve built projects like an expense tracker, a portfolio site, and
+              even an AI chat app — which gave me hands-on experience with APIs,
+              component-based architecture, and making apps feel smooth across
+              devices.
             </p>
 
             <p className="text-lightBodyText leading-relaxed">
-              I follow best practices such as writing maintainable code, using
-              Git for version control, optimizing performance, and ensuring
-              cross-device compatibility.
+              I pay a lot of attention to UI details, reusability, and
+              performance. Whether it's structuring components properly or
+              making sure things look good on mobile, I enjoy the process of
+              refining and improving.
             </p>
 
             <p className="text-lightBodyText leading-relaxed">
-              Currently, I’m seeking an entry-level frontend developer role
-              where I can learn, contribute, and grow as a professional.
+              Right now, I’m looking for an opportunity where I can keep
+              learning, build real-world products, and grow as a frontend
+              developer while contributing to a solid team.
             </p>
             <div className="mt-4">
               <a
-                href={`${import.meta.env.BASE_URL}Harsh_S_Bhaduria_Frontend_Resume.pdf`}
+                href={`${import.meta.env.BASE_URL}Harsh_Singh_Bhaduria_Frontend_Resume.pdf`}
                 download
                 target="_blank"
                 rel="noopener noreferrer"
